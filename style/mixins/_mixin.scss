@@ -1,0 +1,57 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexCenter{
+    @include flex;
+    justify-content: center;
+}
+
+
+@mixin flexBetween {
+        @include flex;
+        justify-content: space-between;
+    }
+
+    @mixin title{
+        color: $secondary;
+        font-family: $LB;
+        font-size: $lg;
+
+        @include media(993){
+            font-size: 30px;
+        }
+
+        @include media(768){
+            font-size: 24px;
+        }
+       
+    }
+
+    @mixin footertitle{
+    color: $secondary;
+    font-size: $md;
+    font-family: $LB;
+    word-wrap: break-word
+    }
+
+    @mixin input{
+        padding: 20px 30px;
+        border-radius: 6px;
+        outline: 1px solid #333;
+        font-family: $LR;
+        font-size: $normal;
+        color: $secondary;
+        text-transform: capitalize;
+
+        &:focus{
+           outline-color: $primary; 
+        }
+
+        &::placeholder{
+            color: rgba(19,39,67,0.5);
+            font-family: $LR;
+            font-size: $normal;
+        }
+    }

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.container{
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+input,button,textarea,
+select,option {
+    border: none;
+    background-color: transparent;
+}
+

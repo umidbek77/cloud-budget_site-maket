@@ -1,0 +1,66 @@
+.page-footer {
+    background: #fafafa;
+    padding-block: 86px 186px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+
+
+
+    .footer-services {
+        display: flex;
+        flex-direction: column;
+        row-gap: 33px;
+        
+
+
+        &_title {
+            @include footertitle;
+        }
+
+        &_text {
+            color: #101010;
+            font-family: $LR;
+            font-size: $xs;
+            line-height: 150%;
+            max-width: 200px;
+        }
+
+
+        .footer-nav-link_links {
+            color: $secondary;
+            font-family: $LR;
+            font-size: $xs;
+            line-height: 160%;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .service-mail {
+            color: #101010;
+            font-family: $LR;
+            font-size: $xs;
+        }
+
+        .footer-tel {
+            color: #121212;
+            font-family: $LR;
+            font-size: $xs;
+
+        }
+
+        .service-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 11px;
+        }
+
+    }
+
+
+}

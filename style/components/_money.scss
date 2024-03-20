@@ -1,0 +1,80 @@
+.money {
+    background-color: $primary;
+    padding-block: 94.5px;
+
+    &-content {
+        @include flexBetween;
+        gap:30px;
+        position: relative;
+
+    &_info {
+        max-width: 445px;
+        width: 100%;
+
+        &-title{
+            @include title;
+            color: $light;
+            margin-bottom: 47px;
+        }
+
+        &-text{
+            color: $light;
+            text-align: justify;
+            font-family: $LR;
+            font-size: $sm;
+            line-height: 140%;
+            margin-bottom: 40px;
+        }
+
+        .media-links {
+            @include flex;
+            gap: 23px;
+        }
+    }
+
+    .content-slider{
+        position: absolute;
+        right: 44px;
+        top:0;
+        max-width: 445px;
+        width: 100%;
+        max-height: 311px;
+       
+
+        .first {
+            position: absolute;
+            top:0;
+            z-index: 3;
+        }
+
+        .second{
+            position: absolute;
+            top: 22px;
+            left: -44px;
+            z-index: 1;
+            max-width: 382px;
+            width: 100%;
+        }
+
+        .third{
+            position: absolute;
+            top: 22px;
+            right: -44px;
+            z-index: 1;
+            max-width: 382px;
+            width: 100%;
+        }
+
+        &_img{
+            position: absolute;
+            
+
+            &> img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    }
+
+}
